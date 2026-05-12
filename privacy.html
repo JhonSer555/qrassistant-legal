@@ -1,64 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — QRAssistant</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111a2e;
+      --text: #e7ecff;
+      --muted: #a9b4d0;
+      --accent: #6c7cff;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 0%, #18264a 0%, var(--bg) 60%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 60px 20px 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(17, 26, 46, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 14px;
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 16px;
+      color: var(--accent);
+    }
+
+    p, li {
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    ul {
+      margin: 10px 0 0 18px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      .card {
+        padding: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<h1>Политика конфиденциальности</h1>
+<header>
+  <h1>Политика конфиденциальности</h1>
+  <p>QRAssistant — обработка и защита данных пользователей</p>
+</header>
 
-<p>
-Настоящая Политика конфиденциальности описывает порядок обработки данных
-при использовании приложения QRAssistant.
-</p>
+<div class="container">
 
-<h2>1. Какие данные могут обрабатываться</h2>
+  <div class="card">
+    <p>
+      Настоящая Политика конфиденциальности описывает порядок обработки данных
+      при использовании приложения QRAssistant.
+    </p>
+  </div>
 
-<p>
-Приложение может обрабатывать:
-</p>
+  <div class="card">
+    <h2>1. Какие данные могут обрабатываться</h2>
+    <p>Приложение может обрабатывать:</p>
+    <ul>
+      <li>технические идентификаторы устройства;</li>
+      <li>данные лицензии PRO;</li>
+      <li>Recovery Key / Recovery QR;</li>
+      <li>информацию о платежах;</li>
+      <li>технические данные, необходимые для работы приложения.</li>
+    </ul>
+  </div>
 
-<ul>
-<li>технические идентификаторы устройства;</li>
-<li>данные лицензии PRO;</li>
-<li>Recovery Key / Recovery QR;</li>
-<li>информацию о платежах;</li>
-<li>технические данные, необходимые для работы приложения.</li>
-</ul>
+  <div class="card">
+    <h2>2. Платежи</h2>
+    <p>
+      Обработка платежей осуществляется через сторонние платежные сервисы,
+      включая Robokassa.
+    </p>
+  </div>
 
-<h2>2. Платежи</h2>
+  <div class="card">
+    <h2>3. Хранение данных</h2>
+    <p>
+      Для хранения технических данных и лицензий может использоваться платформа Supabase.
+    </p>
+  </div>
 
-<p>
-Обработка платежей осуществляется через сторонние платежные сервисы,
-включая Robokassa.
-</p>
+  <div class="card">
+    <h2>4. Передача данных третьим лицам</h2>
+    <p>
+      Данные не продаются и не передаются третьим лицам,
+      за исключением случаев, необходимых для обработки платежей
+      или предусмотренных законодательством РФ.
+    </p>
+  </div>
 
-<h2>3. Хранение данных</h2>
+  <div class="card">
+    <h2>5. Безопасность</h2>
+    <p>
+      Принимаются разумные технические меры для защиты данных пользователей.
+    </p>
+  </div>
 
-<p>
-Для хранения технических данных и лицензий может использоваться платформа Supabase.
-</p>
+  <div class="card">
+    <h2>6. Контакты</h2>
+    <p>Email: <span class="muted">fadeev805@gmail.com</span></p>
+  </div>
 
-<h2>4. Передача данных третьим лицам</h2>
+</div>
 
-<p>
-Данные не продаются и не передаются третьим лицам,
-за исключением случаев, необходимых для обработки платежей
-или предусмотренных законодательством РФ.
-</p>
-
-<h2>5. Безопасность</h2>
-
-<p>
-Принимаются разумные технические меры для защиты данных пользователей.
-</p>
-
-<h2>6. Контакты</h2>
-
-<p>
-Email: fadeev805@gmail.com
-</p>
+<footer>
+  © QRAssistant — All rights reserved
+</footer>
 
 </body>
 </html>
