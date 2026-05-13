@@ -1,90 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — QRAssistant</title>
-  <style>
-    :root {
-      --bg: #0b1220;
-      --card: #111a2e;
-      --text: #e7ecff;
-      --muted: #a9b4d0;
-      --accent: #6c7cff;
-      --border: rgba(255,255,255,0.08);
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — QRAssistant</title>
 
-    * {
-      box-sizing: border-box;
-    }
+<style>
+:root {
+  --bg: #0b1220;
+  --card: #111a2e;
+  --text: #e7ecff;
+  --muted: #a9b4d0;
+  --accent: #6c7cff;
+  --border: rgba(255,255,255,0.08);
+}
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 20% 0%, #18264a 0%, var(--bg) 60%);
-      color: var(--text);
-      line-height: 1.6;
-    }
+* { box-sizing: border-box; }
 
-    header {
-      padding: 60px 20px 25px;
-      text-align: center;
-    }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  background: radial-gradient(1200px 600px at 20% 0%, #18264a 0%, var(--bg) 60%);
+  color: var(--text);
+  line-height: 1.6;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 30px;
-    }
+header {
+  padding: 60px 20px 25px;
+  text-align: center;
+}
 
-    header p {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 14px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+header p {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
 
-    .card {
-      background: rgba(17, 26, 46, 0.85);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-      margin-bottom: 14px;
-      backdrop-filter: blur(10px);
-    }
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    h2 {
-      margin-top: 0;
-      font-size: 16px;
-      color: var(--accent);
-    }
+.card {
+  background: rgba(17, 26, 46, 0.85);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 14px;
+  backdrop-filter: blur(10px);
+}
 
-    p, li {
-      font-size: 14px;
-      color: var(--text);
-    }
+h2 {
+  margin-top: 0;
+  font-size: 16px;
+  color: var(--accent);
+}
 
-    ul {
-      margin: 10px 0 0 18px;
-    }
+p, li {
+  font-size: 14px;
+  color: var(--text);
+}
 
-    .muted {
-      color: var(--muted);
-    }
+ul {
+  margin: 10px 0 0 18px;
+}
 
-   footer {
+.muted {
+  color: var(--muted);
+}
+
+footer {
   text-align: center;
   padding: 40px 20px;
   font-size: 12px;
-  color: #6f7f99; /* тёмно-сине-серый */
+  color: #6f7f99;
   opacity: 0.9;
 }
 
-    .nav {
+.nav {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -99,41 +98,29 @@
   font-weight: 500;
 
   color: #dce6ff;
-
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.08);
 
-  backdrop-filter: blur(10px);
-
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    border 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: 0.2s;
 }
 
 .nav a:hover {
   transform: translateY(-2px);
-
   background: rgba(255,255,255,0.08);
-
   border: 1px solid rgba(120,160,255,0.25);
-
-  box-shadow:
-    0 10px 25px rgba(79,124,255,0.18);
+  box-shadow: 0 10px 25px rgba(79,124,255,0.18);
 }
 
 @media (max-width: 600px) {
-      header h1 {
-        font-size: 24px;
-      }
-
-      .card {
-        padding: 18px;
-      }
-    }
-  </style>
+  .container { padding: 20px 14px; }
+  .card { padding: 18px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 15px; }
+  p, li { font-size: 13px; }
+}
+</style>
 </head>
+
 <body>
 
 <header>
@@ -145,35 +132,31 @@
 
   <div class="card">
     <p>
-      Настоящая Политика конфиденциальности описывает порядок обработки данных
-      при использовании приложения QRAssistant.
+      Настоящая Политика конфиденциальности описывает порядок использования информации при работе приложения QRAssistant.
     </p>
   </div>
 
   <div class="card">
-    <h2>1. Какие данные могут обрабатываться</h2>
-    <p>Приложение может обрабатывать:</p>
+    <h2>1. Общие положения</h2>
+    <p>
+      Приложение QRAssistant предназначено для создания и сканирования QR-кодов.
+      В процессе работы используется только минимально необходимая информация для обеспечения функциональности.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>2. Какие данные могут использоваться</h2>
     <ul>
-      <li>технические идентификаторы устройства;</li>
-      <li>данные лицензии PRO;</li>
-      <li>Recovery Key / Recovery QR;</li>
-      <li>информацию о платежах;</li>
-      <li>технические данные, необходимые для работы приложения.</li>
+      <li>технические идентификаторы устройства или пользователя;</li>
+      <li>данные, необходимые для работы функций приложения;</li>
+      <li>данные, связанные с использованием QR-функций.</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>2. Платежи</h2>
+    <h2>3. Использование данных</h2>
     <p>
-      Обработка платежей осуществляется через сторонние платежные сервисы,
-      включая Robokassa.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>3. Хранение данных</h2>
-    <p>
-      Для хранения технических данных и лицензий может использоваться платформа Supabase.
+      Данные используются исключительно для работы приложения, улучшения стабильности и предоставления функционала.
     </p>
   </div>
 
@@ -181,15 +164,14 @@
     <h2>4. Передача данных третьим лицам</h2>
     <p>
       Данные не продаются и не передаются третьим лицам,
-      за исключением случаев, необходимых для обработки платежей
-      или предусмотренных законодательством РФ.
+      кроме случаев, предусмотренных законодательством РФ.
     </p>
   </div>
 
   <div class="card">
     <h2>5. Безопасность</h2>
     <p>
-      Принимаются разумные технические меры для защиты данных пользователей.
+      Применяются разумные технические меры для защиты данных пользователей.
     </p>
   </div>
 
@@ -198,15 +180,14 @@
     <p>Email: <span class="muted">fadeev805@gmail.com</span></p>
   </div>
 
-<div class="nav">
-  <a href="index.html">Главная</a>
-  <a href="product.html">Описание продукта</a>
-  <a href="offer.html">Оферта</a>
-  <!-- <a href="privacy.html">Политика</a>-->
-  <a href="refund.html">Возврат</a>
-  <a href="data-policy.html">Данные</a>
-</div>
-  
+  <div class="nav">
+    <a href="index.html">Главная</a>
+    <a href="product.html">Описание продукта</a>
+    <a href="offer.html">Оферта</a>
+    <a href="refund.html">Возврат</a>
+    <a href="data-policy.html">Данные (152-ФЗ)</a>
+  </div>
+
 </div>
 
 <footer>
