@@ -4,20 +4,69 @@
 <meta charset="UTF-8">
 <title>Публичная оферта — QRAssistant</title>
 <style>
-body{margin:0;font-family:Arial;background:#0b0f17;color:#eaeef7;}
-.container{max-width:900px;margin:auto;padding:40px;}
-.card{background:#121a2a;padding:30px;border-radius:16px;}
-h1,h2{color:#9bb3ff;}
-p,li{color:#d6dceb;font-size:14px;line-height:1.6;}
-   footer {
+:root {
+  --bg: #0b0f17;
+  --card: #121a2a;
+  --text: #eaeef7;
+  --muted: #6f7f99;
+  --accent: #9bb3ff;
+  --border: rgba(255,255,255,0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* 🔥 MAIN LAYOUT */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+/* TEXT */
+h1, h2 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+p, li {
+  color: #d6dceb;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+ul {
+  margin-left: 18px;
+}
+
+/* FOOTER */
+footer {
   text-align: center;
   padding: 40px 20px;
   font-size: 12px;
-  color: #6f7f99; /* тёмно-сине-серый */
+  color: var(--muted);
   opacity: 0.9;
 }
 
-   .nav {
+/* NAVIGATION */
+.nav {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -32,39 +81,54 @@ p,li{color:#d6dceb;font-size:14px;line-height:1.6;}
   font-weight: 500;
 
   color: #dce6ff;
-
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.08);
 
-  backdrop-filter: blur(10px);
-
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    border 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .nav a:hover {
   transform: translateY(-2px);
-
   background: rgba(255,255,255,0.08);
-
   border: 1px solid rgba(120,160,255,0.25);
-
-  box-shadow:
-    0 10px 25px rgba(79,124,255,0.18);
+  box-shadow: 0 10px 25px rgba(79,124,255,0.18);
 }
 
+/* 📱 MOBILE FIXES */
 @media (max-width: 600px) {
-      header h1 {
-        font-size: 24px;
-      }
 
-      .card {
-        padding: 18px;
-      }
-    }
+  .container {
+    padding: 20px 14px;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p, li {
+    font-size: 13px;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .nav a {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+  }
+}
 </style>
 </head>
 <body>
